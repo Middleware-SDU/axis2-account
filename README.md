@@ -1,4 +1,7 @@
-axis2-account
+# axis2-account #
 =============
+# Web Service 开发练习 【Middle Ware - SDU】#
 
-基于Axis2的银行账户管理 - Axis2 web service开发练习
+基于Web Container 的 Web Service 开发练习
+
+基于EJB Container 的 Web Service 开发练习 ：https://github.com/Middleware-SDU/webserviePractice
