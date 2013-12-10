@@ -1,6 +1,38 @@
+
 *.class
 
-# Package Files #
+# Ignore Java Package Files #
 *.jar
 *.war
 *.ear
+
+logs
+project/project/target
+project/target
+target
+tmp
+.history
+dist
+
+# Ignore test folders
+/data-dev
+/upload
+/data-test
+/data
+
+# ignore idea related resources
+.idea
+*.iml
+out
+.idea_modules
+RUNNING_PID
+
+# ignore eclipse related resources
+.settings
+.target
+.classpath
+.project
+.myeclipse
+.mymetadata
+
+
