@@ -1,5 +1,5 @@
 
-package stub;
+package cn.edu.sdu.middleware.axis2.clients.stubs;
 
 import java.net.MalformedURLException;
 import java.net.URL;

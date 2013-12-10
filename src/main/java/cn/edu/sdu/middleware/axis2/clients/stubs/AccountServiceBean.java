@@ -1,5 +1,5 @@
 
-package stub;
+package cn.edu.sdu.middleware.axis2.clients.stubs;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;

@@ -1,5 +1,5 @@
 
-package stub;
+package cn.edu.sdu.middleware.axis2.clients.stubs;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;

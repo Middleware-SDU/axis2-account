@@ -1,5 +1,5 @@
 
-package stub;
+package cn.edu.sdu.middleware.axis2.clients.stubs;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -8,16 +8,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for saveResponse complex type.
+ * <p>Java class for depositResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="saveResponse">
+ * &lt;complexType name="depositResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="return" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="return" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -27,23 +27,23 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "saveResponse", propOrder = {
+@XmlType(name = "depositResponse", propOrder = {
     "_return"
 })
-public class SaveResponse {
+public class DepositResponse {
 
     @XmlElement(name = "return")
-    protected String _return;
+    protected Double _return;
 
     /**
      * Gets the value of the return property.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Double }
      *     
      */
-    public String getReturn() {
+    public Double getReturn() {
         return _return;
     }
 
@@ -52,10 +52,10 @@ public class SaveResponse {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Double }
      *     
      */
-    public void setReturn(String value) {
+    public void setReturn(Double value) {
         this._return = value;
     }
 

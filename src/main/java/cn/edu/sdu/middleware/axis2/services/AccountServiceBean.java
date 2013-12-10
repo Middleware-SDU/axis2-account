@@ -20,10 +20,10 @@ public class AccountServiceBean implements AccountService {
 
     @Override
     public String save(String name, Double balance) {
-        System.out.println("注册账户成功！！");
         Account account = new Account(name, balance);
         account.setId(UUID.randomUUID().toString());
         accounts.add(account);
+        System.out.println(name + " has been saved successfully.");
         return account.getId();
     }
 
@@ -37,6 +37,7 @@ public class AccountServiceBean implements AccountService {
                 if(a.getBalance() < 0) {
                     return -1.0;
                 }
+                System.out.println("Geted balance is " + a.getBalance() + " RMB.");
                 return a.getBalance();
             }
         }
@@ -51,6 +52,7 @@ public class AccountServiceBean implements AccountService {
         for(Account a : accounts) {
             if(id.equals(a.getId())) {
                 a.setBalance(a.getBalance()+in);
+                System.out.println("Deposited " + in + " RMB successfully.");
                 return a.getBalance();
             }
         }
@@ -68,6 +70,7 @@ public class AccountServiceBean implements AccountService {
                     return -1.0;
                 }
                 a.setBalance(a.getBalance() - out);
+                System.out.println("Drawed " + out + " RMB successfully.");
                 return a.getBalance();
             }
         }

@@ -1,5 +1,5 @@
 
-package stub;
+package cn.edu.sdu.middleware.axis2.clients.stubs;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -7,12 +7,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for deposit complex type.
+ * <p>Java class for draw complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="deposit">
+ * &lt;complexType name="draw">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -27,11 +27,11 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "deposit", propOrder = {
+@XmlType(name = "draw", propOrder = {
     "arg0",
     "arg1"
 })
-public class Deposit {
+public class Draw {
 
     protected String arg0;
     protected Double arg1;

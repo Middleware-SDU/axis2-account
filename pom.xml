@@ -6,8 +6,8 @@
     <groupId>cn.sdu.edu.middleware</groupId>
     <artifactId>axis2-account</artifactId>
     <name>Axis2 Account of A Bank</name>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <version>1.0.0-RELEASE</version>
+    <packaging>jar</packaging>
     <inceptionYear>2013</inceptionYear>
 
     <build>
@@ -20,15 +20,6 @@
                     <source>1.7</source>
                     <target>1.7</target>
                     <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.1.1</version>
-                <configuration>
-                    <warSourceDirectory>${basedir}/src/main/webapp</warSourceDirectory>
                 </configuration>
             </plugin>
 
@@ -48,26 +39,6 @@
         </plugins>
 
         <sourceDirectory>src/main/java</sourceDirectory>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
-
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
-            </resource>
-        </resources>
-        <testResources>
-            <testResource>
-                <directory>src/test/resources</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                    <include>**/*.properties</include>
-                    <include>**/*.wsdl</include>
-                </includes>
-            </testResource>
-        </testResources>
 
     </build>
 </project>
